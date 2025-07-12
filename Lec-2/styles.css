@@ -1,0 +1,73 @@
+/* adjacent sibling selector */
+/* general sibling selector-neeche wala all siblings */
+.para ~ h1{
+    color:rgb(66, 135, 66);
+}
+/* neeche wala closest sibling */
+.para + h1{
+    color:red;
+}
+
+#box-model{
+    /* border-color: green;
+    border-width:3px;
+    border-style:solid; */
+    /* short-hand property */
+    border: 5px outset rgb(91, 52, 59);
+    width:300px;
+    height:300px;
+    margin:auto;
+    background-color: #e9beb6;
+    
+    /* Method-1:
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top:50px;
+    padding-bottom:20px; */
+
+    /* Method-2:
+    padding: 30px; (All sides 30 px) */
+
+    /* Method-3:
+    padding:30px 20px;
+    top-bottom left-bottom */
+
+    /* Method-4:
+    Starting from top, right-bottom-left */
+    padding: 100px;
+
+    margin: 20px 30px 40px 50px;
+    /* h2 ki bottom margin an div ki top margin will collapse together */
+    border-radius:50%;
+}
+
+body{
+    background-color: rgb(203, 244, 244);
+    /* background-color is inheritable property */
+    border: 3px solid black;
+    background-image: url(choco\ lava\ cake.jpg);
+    background-size:contain;
+    /* border is not inheritable property */
+}
+
+*{
+    border: 1px solid black;
+    background-color: beige;
+    /* This states that the properties typed here will be given to each element irrespective of inherited properties. */
+}
+
+#bgimage{
+    background-image:url(Screenshot\ 2025-07-02\ 153001.png);
+    margin:auto;
+    width:600px;
+    height:800px;
+    background-repeat:no-repeat;
+    border: 2px, outset red;
+    background-size: cover;
+    /* background-size:cover; no need when using cover, use it when you use contain.*/
+    color:white;
+    background-position: center center;
+    /* difference between contain and cover is contain will stretch the image until it hits the boundary, i.e: if it reaches max height or width preferably only one will be used in the code and then stop */
+    /* cover will go upto both the boundaries and go on zooming the image untill it's height and width are attained */
+    /* center center tells where to zoom inside the image for cover */
+}
