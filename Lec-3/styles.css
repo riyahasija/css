@@ -1,0 +1,44 @@
+/* reset styling */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: beige;
+}
+
+.div1, .div2{
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+#div1{
+    background-color: bisque;
+}
+#div2{
+    /* box-sizing: border-box; */
+    background-color: rgb(196, 196, 196);
+}
+
+.sp{
+    width: 50%;
+    box-sizing: border-box;
+    background-color:rgb(249, 159, 159);
+    display:inline-block;
+    border: 2px solid red;
+    padding: 20px;
+    margin:10px;
+}
+.container{
+    width: 950px;
+    height:300px;
+    background-color: antiquewhite;
+}
+.container>div{
+    display:inline-block;
+    width:50%;
+    vertical-align: top;
+}
+
