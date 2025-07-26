@@ -1,0 +1,37 @@
+#parent{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(243, 147, 147);
+    position: relative;
+    left: 50px;
+
+}
+
+#child{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(215, 235, 253);
+    position:absolute;
+    bottom:0px;
+}
+#box2{
+    position:sticky;
+    top:0px;
+    background-color: bisque;
+}
+
+#box{
+    width: 40px;
+    height: 40px;
+    position:fixed;
+    bottom: 20px;
+    right: 40px;
+    font-size: 40px;
+    text-decoration: none;
+    z-index:8;
+}
+
+a{
+    text-decoration: none;
+}
+
