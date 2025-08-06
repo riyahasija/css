@@ -1,0 +1,270 @@
+body{
+    background-color: #F7F5F2;
+}
+
+#logobar{
+    width: 100%;
+    height: 70px;
+    background-color: #C7D3C0;
+    position:sticky;
+    z-index: 8;
+    top:0px;
+    left:0px;
+    
+}
+
+#logo{
+    font-family:Lucida Handwriting;
+    font-size: 25px;
+    position:absolute;
+    left: 300px;
+    top:15px;
+    display: inline-block;
+    color:#3C3C3B;
+}
+
+#searchbar{
+    width:150px;
+    height:30px;
+    font-size: 20px;
+    position:absolute;
+    right: 300px;
+    top:25px;
+    background-color: #FAF6F2 ;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#bell{
+    position: absolute;
+    right: 150px;
+    top:25px;
+    font-size: 30px;
+    color:#A1866F;
+}
+
+#bell:hover{
+    animation:fa-shake 2s infinite;
+}
+
+#menu{
+    position: absolute;
+    right: 100px;
+    top:25px;
+    font-size: 30px;
+    color:#A1866F;
+}
+
+#menu:hover+#genresidebar{
+    opacity:1;
+
+}
+
+#menu:hover{
+    animation: fa-beat 2s infinite;
+}
+.herocontainer {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  height: 100%;              
+  position: relative;   
+  background-image: url(Bird\ tree\ decal\ wall\ sticker.jpg);   
+   
+}
+
+#heroimage{
+    width: 100vw;
+    height: 600px;
+    transform:scale(0.5);
+    text-align: center;
+    font-size: 200px;
+    color:rgb(88, 107, 98);
+    text-shadow: #3C3C3B;
+    opacity:1;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(198, 190, 179, 0.7); /* black with opacity */
+  pointer-events: none; /* allows clicks to pass through */
+}
+#navbar{
+    width:100%;
+    height: 40px;
+    background-color:#D9CAB3;
+    position:sticky;
+    top: 70px;
+    left:0px;
+    z-index: 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.navelement{
+    display:inline-block;
+    font-size: 20px;
+    width:10%;
+    text-align:center;
+    position: relative;
+    border: 1px;
+    height:100%;
+    color:#3C3C3B;
+    border-right: 1px solid black;
+}
+
+.navelement:hover{
+    background-color: #A1866F;
+    cursor:pointer;
+}
+
+.poemcontainer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.poemcard{
+    background-color: #F3E9DC;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    margin-top:70px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top:50px;
+    border-radius:10px;
+    width: calc(25% - 24px);
+    height: 300px;
+    box-shadow:12px 12px 12px #A08C78;
+    vertical-align:top;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+
+}
+
+.poemcard2{
+    background-color: #F3E9DC;
+    object-fit: cover;
+    position: relative;
+    aspect-ratio: 1/1;
+    margin-top:70px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top:50px;
+    border-radius:10px;
+    width: calc(25% - 24px);
+    height: 300px;
+    box-shadow:12px 12px 12px #A08C78;
+    vertical-align:top;
+
+}
+
+.heading{
+    font-size: 20px;
+    padding: 10px;;
+    margin:auto;
+    text-align: center;
+    font-family: lucida handwriting;
+}
+
+.poem1{
+    text-align: left;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    position: static;
+    margin:20px;
+}
+
+.poem2{
+    display:-webkit-box;
+    -webkit-line-clamp: 4;  
+    -webkit-box-orient: vertical;
+    word-wrap:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    margin: 20px;
+    white-space: normal;
+    line-height: 1.4em;
+}
+
+.readmorebtn{
+
+    width: 100px;
+    height: 30px;
+    background-color:#8E9775;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    bottom: 10px;
+    border-radius: 10px;
+    box-shadow:12px 12px 12px rgb(164, 164, 164);
+
+}
+
+.readmorebtn:hover{
+    background-color: #006400 ;
+    cursor:pointer;
+}
+
+#poemcard1{
+    background-color: #D3D9D1;
+}
+
+#poemcard2{
+    background-color: #EBDCCB;
+}
+
+.poemcard:hover{
+    
+    box-shadow: 4px 4px 4px #A08C78;
+    transform: scale(1.05);
+}
+.poemcard2:hover{
+    
+    box-shadow: 4px 4px 4px #A08C78;
+    transform: scale(1.05);
+}
+
+#genresidebar{
+    width: 180px;
+    height: 150px;
+    background-color: #F4F1EA; /* Soft cream */
+    color: #4C4B42; /* Earthy text color */
+    font-size: 15px;
+    text-align: center;
+    position:absolute;
+    top: 110px;
+    border-radius: 10px;
+    right:0px;
+    z-index: 15;
+    opacity:0;
+    box-shadow: 10px 10px 10px 10px rgba(108, 99, 86, 1); /* Soft brown shadow */
+    padding: 30px;
+}
+
+.genre{
+    display:flex;
+    width: 150px;
+    height: 40px;
+    background-color: #F4F1EA ;
+    color: #4C4B42;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+.flex-container{
+    display:flex;
+}   
+
+p{
+    border:2px solid black;
+}
+
+.boxes{
+    display:flex;
+    border: 2px solid red;
+    flex-direction: column;
+    width:400px;
+    height: 400px;
+    flex-wrap:wrap-reverse;
+}
+
+.boxes>div{
+    height: 100px;
+    width: 100px;
+    border:2px solid black;
+    flex-shrink:0;
+}
