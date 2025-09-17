@@ -1,0 +1,59 @@
+/*layout utilities starts*/
+.d-flex{
+    display:flex;
+}
+
+.row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+/*layout utilities ends*/
+
+/*button utilities starts*/
+.btn{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 4;
+}
+
+.btn-success{
+    background-color: #28a745;
+    color:white;
+}
+/*button utilities ends*/
+
+/*text utilities starts*/
+.text-success{
+    color:#28a745;
+}
+
+.text-muted{
+    color:#6c757d;
+}
+
+.text-white{
+    color:white;
+}
+/*text utilities ends*/
+
+/*width-height utilities*/
+.w-100{
+    width:100%;
+}
+/*width utilities ends*/
+

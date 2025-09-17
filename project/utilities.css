@@ -1,0 +1,76 @@
+/* layout utilities starts */
+.d-flex{
+    display: flex;
+    
+}
+.d-flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* layout utilities end */
+
+/* button utilities starts */
+.btn{
+    text-decoration: none;
+    padding: 1 rem;
+    border-radius: 5px;
+}
+.btn-success{
+    background-color: #28a745;
+    color: white;
+}
+/* button utilities ends */
+
+/* text utilities start */
+.text-grey {
+  color: #aaa9a9; /* Neutral gray */
+}
+
+.text-red {
+  color: #f87e7e; /* Coral red */
+}
+
+.text-lavender {
+  color: #d9d8ff; /* Indigo purple */
+}
+.text-muted{
+    color: #6c757d;
+}
+.text-white{
+    color: white;
+}
+
+body.light-mode .text-lavender{
+    color:white;
+}
+
+body.light-mode {
+  color: #333333; /* main text */
+}
+body.light-mode .text-grey {
+  color: white; /* secondary text */
+}
+body.light-mode .text-red {
+  color: white; /* softer yellow-orange for highlights */
+}
+
+/* text utilities end */
+
+/* width-height utilities starts */
+.w-100{
+    width: 100%;
+}
+
+/* width-height utilities ends */

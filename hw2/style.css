@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    background-color: gray;
+    color: black;
+    padding: 10px 20px;
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    width: 200px;
+}
+
+.dropdown::after {
+    content: "▼";
+    margin-left: 10px;
+    font-size: 0.8em;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <!-- Utilities first, then project-specific -->
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="project.js" defer></script>
+</head>
+<body>
+  <!--nav starts-->
+    <div id="nav-bar" class="d-flex justify-content-center">
+      <div class="row" id="logo">
+      <!-- <img src="https://images.pexels.com/photos/1029141/pexels-photo-1029141.jpeg" alt="Not found" height="80px" style="border-radius: 10px;"> -->
+       
+  </div>
+  <div id="logo-name" class="row">
+  <div class="text-lavender"><i class="fa-solid fa-book"></i>Shelf</div>wise
+  </div>
+  <input id="searchbar" placeholder="Search books..." class="d-flex justify-content-center align-items-center" oninput="handleSearch(this.value)">
+
+  </input>
+    <div class="nav-elem">
+      <div class="bulb"></div>
+      <div class="spotlight"></div>
+      <div class="icon d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-house"></i>
+      <!-- <div class="comment-box d-flex justify-content-center align-items-center">Home</div> -->
+      </div>
+    </div>
+      
+    <div class="nav-elem">
+      <div class="bulb"></div>
+      <div class="spotlight"></div>
+      <div class="icon d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <!-- <div class="comment-box d-flex justify-content-center align-items-center">Buy</div> -->
+      </div>
+    </div>
+      
+    <div class="nav-elem">
+      <div class="bulb"></div>
+      <div class="spotlight"></div>
+      <div class="icon d-flex justify-content-center align-items-center">
+        <a href="reviews.html" class="text-grey" target="_blank"><i class="fa-solid fa-thumbs-up"></i></a>
+        <!-- <div class="comment-box d-flex justify-content-center align-items-center">Review</div> -->
+      </div>
+    </div>
+    <div class="nav-elem">
+      <div class="bulb"></div>
+      <div class="spotlight"></div>
+      <div class="icon d-flex justify-content-center align-items-center">
+        <a href="login.html" class="text-grey" target="_blank"><i class="fa-solid fa-user"></i></a>
+        <!-- <div class="comment-box d-flex justify-content-center align-items-center">Review</div> -->
+      </div>
+    </div>
+    <div class="nav-elem">
+      <div class="bulb"></div>
+      <div class="spotlight"></div>
+      <div class="icon d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-lightbulb" onclick="document.body.classList.toggle('light-mode');this.classList.toggle('fa-lightbulb');
+        this.classList.toggle('fa-moon');"></i>
+        <!-- <div class="comment-box d-flex justify-content-center align-items-center">About Us</div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--nav ends-->
+<!--hero section starts-->
+<div class="w-100 hero-image row" id="black-overlay">
+  <div class="hero-text justify-content-center">
+  <span class="text-grey">Read</span> 
+  <span class="text-red">smarter</span>, 
+  <span class="text-grey">Read</span> 
+  <span class="text-lavender">Shelfwise</span>...!
+  <span class="text-grey"><i class="fa-solid fa-magnifying-glass"></i></span> 
+  </div>
+</div>
+<!--hero section ends-->
+<!-- featured recommendations starts -->
+<div class="recommendations-section">
+  <h2 class="section-title">Recommended For You</h2>
+  <div class="cards-container">
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8226191-L.jpg" alt="Book Cover">
+      <h3>The Midnight Library</h3>
+      <p>By Matt Haig</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/10509139-L.jpg" alt="Book Cover">
+      <h3>Atomic Habits</h3>
+      <p>By James Clear</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8231991-L.jpg" alt="Book Cover">
+      <h3>The Alchemist</h3>
+      <p>By Paulo Coelho</p>
+    </div>
+  </div>
+</div>
+<!-- featured recommendations ends -->
+
+<!-- trending books starts -->
+<div class="trending-section">
+  <h2 class="section-title">Trending Books</h2>
+  <div class="cards-container">
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8231856-L.jpg" alt="Book Cover">
+      <h3>Where the Crawdads Sing</h3>
+      <p>By Delia Owens</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8281996-L.jpg" alt="Book Cover">
+      <h3>Educated</h3>
+      <p>By Tara Westover</p>
+    </div>
+    <div class="book-card">
+      <img src="https://covers.openlibrary.org/b/id/8231826-L.jpg" alt="Book Cover">
+      <h3>Becoming</h3>
+      <p>By Michelle Obama</p>
+    </div>
+  </div>
+</div>
+<!-- trending books ends -->
+<!-- about us section starts -->
+<div class="about-us-section">
+  <h2 class="section-title">About Us</h2>
+  <p>
+    Welcome to <span class="text-lavender">Shelfwise</span> — your companion in discovering, reviewing, and sharing books that enrich your life. Our mission is to help readers build smarter reading habits, explore personalized recommendations, and connect with fellow book lovers. Whether you're here to find your next favorite read or share your thoughts, we are committed to creating a friendly, inclusive, and inspiring space.
+  </p>
+  <p>
+    We believe that every book has the power to open new worlds and perspectives. That's why we focus on simplicity, readability, and a design that keeps your eyes comfortable. Dive into curated lists, explore trending titles, and be part of a community that celebrates the joy of reading.
+  </p>
+</div>
+<!-- about us section ends -->
+<!-- contact section starts -->
+<div class="contact-section">
+  <h2 class="section-title">Get in Touch</h2>
+  <div class="contact-icons">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+    <a href="mailto:contact@shelfwise.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</div>
+<!-- contact section ends -->
+
+</body>
+</html>

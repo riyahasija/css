@@ -1,0 +1,31 @@
+body{
+    background-color: #F7F5F2;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+    height: 100vh;
+}
+
+.formcontainer{
+    background-color: #C7D3C0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px #A9BA9D;
+    padding: 20px;
+    margin: 20px;
+    color:#4D5D53
+}
+
+.form-elems{
+    width:60%;
+    height:10%;
+    background-color: #EFDECD ;
+}
+
+

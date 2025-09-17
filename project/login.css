@@ -1,0 +1,79 @@
+/* Fullscreen centered wrapper */
+.login-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1e1e2f;
+}
+
+body.light-mode .login-wrapper {
+  background-color: #f4f4f4;
+}
+
+/* Login container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2.5rem 2rem;
+  border-radius: 10px;
+  background-color: #2e2e3e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .login-container {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+.form-group {
+  width: 100%;
+  margin-bottom: 1.8rem; /* Increased spacing */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem; /* More padding */
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #444;
+  color: #fff;
+}
+
+body.light-mode .form-group input {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 5px #B2B0E8;
+}
+
+/* Button styling */
+.btn-login {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #B2B0E8;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.light-mode .btn-login {
+  background-color: #6c63ff;
+  color: white;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.toggle-mode {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}

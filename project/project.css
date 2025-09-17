@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background: #2b2b3c;
+  color: white;
+}
+
+body.light-mode{
+  background-color: #878787;  
+  color: #5b5b5b;  
+}
+
+a{
+  text-decoration: none;
+}
+
+#nav-bar {
+  background: #111;
+  padding: 15px 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+  position: fixed; 
+  top: 0;
+  width:98%;
+  z-index: 10;
+  /* box-shadow: 0.5px 0.5px 0.5px rgb(255, 148, 148); */
+}
+body.light-mode #nav-bar{
+  background-color: #7F8CAA; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.nav-elem {
+  position: relative;
+  margin: 0 20px;
+}
+
+.icon {
+  font-size: 28px;
+  color: #aaa;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+body.light-mode .icon{
+  color:black;
+}
+
+.spotlight {
+  position: absolute;
+  top: 2px;
+  left: -10px;
+  width: 80px;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.9) 0%,   
+    rgba(255,255,255,0.4) 60%,  
+    rgba(255,255,255,0.1) 100%
+  );
+  clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+  opacity: 0;
+  z-index: 0;
+}
+
+.bulb {
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  background-color: white;
+}
+
+.nav-elem:hover .comment-box {
+  opacity: 1;
+}
+
+.nav-elem:hover .bulb {
+  opacity: 1;
+}
+
+.nav-elem:hover .spotlight {
+  opacity: 0.5;
+}
+
+.nav-elem:hover .icon {
+  color: #fff;
+  cursor: pointer;
+}
+
+body.light-mode .nav-elem:hover .icon{
+  color:#333333;
+}
+
+#logo{
+  /* border-radius: 20px; */
+  position: relative;
+  top:0px;
+  left: 0px;
+}
+
+#logo-name{
+  font-size: 2.7rem;
+  font-weight: bold;
+  position:relative;
+  top: 0px;
+  left:-300px;
+  flex-grow: 1;
+}
+
+.hero-image{
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url(https://i.pinimg.com/1200x/05/29/87/052987e722712b613a758d07a56b21fb.jpg);
+  aspect-ratio: 1/0.37;
+  height:100vh;
+  object-fit: cover;
+}
+
+body.light-mode .hero-image{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url(https://i.pinimg.com/1200x/8b/9a/ea/8b9aea9749b1ec4d6804c07302c7395a.jpg);
+  aspect-ratio: 1/1;
+  height:100vh;
+  object-fit: contain;
+}
+
+.hero-text {
+  font-size: 2.6rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid black;
+  width: 0;
+  animation: typing 8s steps(60, end) forwards;
+  text-shadow: black;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 32ch }
+}
+
+body.light-mode .nav-elem:hover .spotlight {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,224,0.9) 0%,   
+    rgba(255,255,224,0.4) 60%,
+    rgba(255,255,224,0.1) 100%
+  );
+}
+
+#searchbar{
+  background-color: white;
+  width:12%;
+  height: 25px;
+  border-radius:10px;
+  align-self: center;
+  position:relative;
+  right: 30px;
+}
+
+.recommendations-section, .trending-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-card {
+  background-color: #1f1f2e;
+  width:250px;
+  border-radius: 12px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card img {
+  width: 100%;
+  height: 300px;            
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.book-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.book-card p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Light mode overrides */
+body.light-mode .recommendations-section,
+body.light-mode .trending-section {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+body.light-mode .book-card {
+  box-shadow: 1px 1px 1px 1px rgb(159, 159, 159);
+  background-color: #ffffff;
+}
+
+body.light-mode .book-card p {
+  color: #666;
+}
+
+.about-us-section { 
+  padding: 40px 20px; 
+  background-color: #1a1a2e; 
+  text-align: center; 
+} 
+.about-us-section .section-title { 
+  font-size: 2rem; 
+  margin-bottom: 20px; 
+  color: #e0e0e0;
+ } 
+.about-us-section p { 
+  font-size: 1rem; 
+  max-width: 700px; 
+  margin: 10px auto; 
+  line-height: 1.6; 
+  color: #ccc; 
+} 
+body.light-mode .about-us-section { 
+  background-color: #f0f0f0; 
+} 
+body.light-mode .about-us-section p { 
+  color: #555; 
+} 
+
+.text-lavender { 
+  color: #c689ff; 
+} 
+  
+.contact-section { 
+  padding: 30px 20px; 
+  background-color: #111; 
+  text-align: center; 
+} 
+  
+.contact-section .section-title { 
+  font-size: 1.8rem; 
+  margin-bottom: 15px; 
+  color: #e0e0e0; 
+} 
+  
+.contact-icons { 
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+} 
+  
+.contact-icons a { 
+  color: #aaa; 
+  font-size: 1.5rem; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+} 
+  
+.contact-icons a:hover { 
+  color: #c689ff; 
+  transform: scale(1.2); 
+} 
+  
+/* Light mode overrides */ 
+
+body.light-mode .contact-section { 
+  background-color: #ddd; 
+} 
+  
+body.light-mode .contact-section .section-title { 
+  color: #333; 
+} 
+  
+body.light-mode .contact-icons a { 
+  color: #555; 
+} 
+  
+body.light-mode .contact-icons a:hover { 
+  color: #7f4fff; 
+}

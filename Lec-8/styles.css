@@ -1,0 +1,72 @@
+/* reset styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+/* nav style starts */
+nav{
+    background-color: rgba(0,0,0,0.8);
+    justify-content: space-between;
+    height: 65px;
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+}
+nav h1{
+    font-size:2.5rem;
+    font-weight: 450;
+}
+nav ul{
+    list-style-type:none;
+}
+nav ul a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    
+}
+
+/* nav styles ends */
+
+/*hero section starts*/
+#hero{
+    /* background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+                url(hero.webp); */
+    background-image: url(hero.webp);
+    height:100vh;
+    background-size: cover;
+}
+
+#hero>h1{
+    font-size:50px;
+    font-weight: 500;
+    z-index: 4;
+}
+
+#hero>p{
+    width:30%;
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    z-index: 4;
+}
+
+#hero::before{
+    content:"";
+    height:100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+}
+/*hero section ends*/
+
+
+

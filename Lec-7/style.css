@@ -1,0 +1,59 @@
+.box{
+    background-color: beige;
+    border: 2px solid red;
+}
+
+/*mobile screens*/
+@media (max-width:600px){
+    .box{
+        background-color: blueviolet;
+    }
+}
+
+/*large phones */
+@media (min-width:600px) and (max-width:768px){
+    .box{
+        background-color: aqua;
+    }
+}
+
+/*tablets*/
+@media (min-width:768px) and (max-width:992px){
+    .box{
+        background-color:aquamarine;
+    }
+}
+
+/*laptops*/
+@media (min-width:992px) and (max-width:1200px){
+    .box{
+        background-color:rgb(96, 68, 68);
+    }
+}
+
+/*desktops and bigger screens, similar syntax but I'm leaving it to default beige*/
+
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border:2px solid black;
+    width:100%;
+    flex-wrap:wrap;
+    padding: 10px;
+}
+
+.elems{
+    height: 300px;
+    width: 300px;
+    background-color: beige;
+    border: 2px solid red;
+    margin: 10px;
+}
+
+@media (min-width:768px){
+    .container{
+        flex-wrap: nowrap;
+    }
+}
